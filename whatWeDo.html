@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="Default_Navbar" id="Default_Navbar">
+        <div class="navbar">
+          <div class="logo"><a href="#">SFoundatin</a></div>
+          <i class='bx bx-menu'><i class="bi bi-list">=</i></i>
+          <div class="nav-links" id="nav_links">
+            <div class="sidebar-logo">
+              <span class="logo-name">SFoundation</span>
+              <i class="bi bi-x">x</i>
+            </div>
+            <ul class="links">
+              <li class="px-3"><a href="index.html">Home</a></li>
+              <li class=" px-3"><a href="aboutUs.html">About Us</a></li>
+              <li><a href="whatWeDo.html">What We Do</a></li>
+              <li class=" px-3"><a href="events.html">Events</a></li>
+              <li class=" px-3"><a href="contactUs.html">Contact Us</a></li>
+              <li class=" px-3"><a href="logIn.html">LogIn</a></li>
+              <li class=" px-3"><a href="donate.html">Donate</a></li>
+            </ul>
+          </div>
+      </nav>
+    
+      <script>
+        // sidebar open close js code
+        let navLinks = document.querySelector(".nav-links");
+        let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+        let menuCloseBtn = document.querySelector(".nav-links .bi-x");
+        menuOpenBtn.onclick = function () {
+          navLinks.style.left = "0";
+        }
+        menuCloseBtn.onclick = function () {
+          navLinks.style.left = "-100%";
+        }
+        // sidebar submenu open close js code
+        let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+        htmlcssArrow.onclick = function () {
+          navLinks.classList.toggle("show1");
+        }
+        let moreArrow = document.querySelector(".more-arrow");
+        moreArrow.onclick = function () {
+          navLinks.classList.toggle("show2");
+        }
+        let jsArrow = document.querySelector(".js-arrow");
+        jsArrow.onclick = function () {
+          navLinks.classList.toggle("show3");
+        }
+      </script>
+    
+    
+    <div class="container row mt-5 mx-auto">
+      
+        <div class="col-lg-6">
+            <h2 class="mb-2"><span style="color: #44364E;" >What We Do</span></h2>
+            <p>
+                Deana Uppal is an entrepreneur, filmmaker, and philanthropist. Her upbringing was modest, she grew up in a small village in North Yorkshire,UK, then moved to the West Midlands at the age of 14. She was born to an Indian mother, and having lost her father at a young age; she learned the importance of hard work and self-reliance early on in life.
+                s also a notable alumni of the London Film Academy.
+                
+                India, on her own to pursue a career in film. It was here where she was first exposed to extreme poverty, which profoundly impacted her. While she gained experience working on various films, winning the title of Miss India UK, being in some of the most popular tv shows such as Big Brother and Celebrity Fear Factor to name a few, she soon realised that she wanted to use her skills and talents to create meaningful content that would make a positive impact.
+                India, on her own to pursue a career in film. It was here where she was first exposed to extreme poverty, which profoundly impacted her. While she gained experience working on various films, winning the title of Miss India UK, being in some of the most popular tv shows such as Big Brother and Celebrity Fear Factor to name a few, she soon realised that she wanted to use her skills and talents to create meaningful content that would make a positive impact.
+                At the age of 21, Deana made the bold decision to move to Mumbai, India, on her own to pursue a career in film. It was here where she was first exposed to extreme poverty, which profoundly impacted her. While she gained experience working on various films, winning the title of Miss India UK, being in some of the most popular tv shows such as Big Brother and Celebrity Fear Factor to name a few, she soon realised that she wanted to use her skills and talents to create meaningful content that would make a positive impact.
+                
+                As a self-made woman, Deana believes that the long-term cure to poverty lies not in reliance on donations but rather in providing access to education and enabling individuals to attain dignified work to achieve self-sufficiency.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://kindnessdiariestrust.org/wp-content/uploads/2022/10/1FDC419F-59C2-4991-9499-E239B8DBCF4C-683x1024.jpg" alt="">
+        </div>
+      </div>
+
+
+</body>
+</html>
