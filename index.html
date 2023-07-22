@@ -1,531 +1,320 @@
 <!DOCTYPE html>
-<html lang="en-US" class="cmsmasters_html">
+<html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Css -->
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S Foundation</title>
-    <meta name='robots' content='max-image-preview:large' />
-    <link rel='stylesheet' id='children-charity-adaptive-css' href='https://children-charity.cmsmasters.net/wp-content/themes/children-charity/theme-framework/theme-style/css/adaptive.css?ver=1.0.0' type='text/css' media='screen, print' />
-    <link rel='stylesheet' id='children-charity-fonts-schemes-css' href='https://children-charity.cmsmasters.net/wp-content/uploads/cmsmasters_styles/children-charity.css?ver=1.0.0' type='text/css' media='screen' />
-    <link rel='stylesheet' id='children-charity-donations-style-css' href='https://children-charity.cmsmasters.net/wp-content/themes/children-charity/cmsmasters-donations/cmsmasters-framework/theme-style/css/plugin-style.css?ver=1.0.0' type='text/css' media='screen'/>
-    <link rel='stylesheet' id='children-charity-donations-adaptive-css' href='https://children-charity.cmsmasters.net/wp-content/themes/children-charity/cmsmasters-donations/cmsmasters-framework/theme-style/css/plugin-adaptive.css?ver=1.0.0' type='text/css'media='screen' />
-    <script type='text/javascript' src='https://children-charity.cmsmasters.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
-    <script type='text/javascript' src='https://children-charity.cmsmasters.net/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.3' async id='tp-tools-js'></script>
-    <script type='text/javascript' src='https://children-charity.cmsmasters.net/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.3' async id='revmin-js'></script>
-    <link rel="https://api.w.org/" href="https://children-charity.cmsmasters.net/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://children-charity.cmsmasters.net/wp-json/wp/v2/pages/14410" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://children-charity.cmsmasters.net/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://children-charity.cmsmasters.net/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 6.0.5" />
-    <link rel="canonical" href="https://children-charity.cmsmasters.net/" />
-    <link rel='shortlink' href='https://children-charity.cmsmasters.net/' />
-    <link rel="alternate" type="application/json+oembed" href="https://children-charity.cmsmasters.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchildren-charity.cmsmasters.net%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="https://children-charity.cmsmasters.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchildren-charity.cmsmasters.net%2F&#038;format=xml" />
-    <meta name="tec-api-version" content="v1">
-    <meta name="tec-api-origin" content="https://children-charity.cmsmasters.net">
-    <link rel="alternate" href="https://children-charity.cmsmasters.net/wp-json/tribe/events/v1/" />
-    <meta name="generator" content="Powered by Slider Revolution 6.6.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-    <link rel="apple-touch-icon" href="https://children-charity.cmsmasters.net/wp-content/uploads/2017/06/favicon.png" />
-    <meta name="msapplication-TileImage" content="https://children-charity.cmsmasters.net/wp-content/uploads/2017/06/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+/* index section start */
+        .home_img01 {
+            background-image: url(https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/children1-1.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+        }
+
+        .home_img02 {
+            background-image: url(https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/children-2.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            height: 900px;
+            width: 100%;
+        }
+
+
+        .home_text01 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 700;
+            color: #cd366b;
+        }
+
+        .home_text02 {
+            font-size: 36px;
+            line-height: 76px;
+            font-weight: 400;
+            color: #44364e;
+        }
+
+        .home_text03 {
+            /* display: flex; */
+            justify-content: center;
+            color: #746f77;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+
+        .home_text04 {
+            /* display: flex; */
+            justify-content: center;
+            color: #746f77;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+
+        /* @media screen and (max-width: 880px) {
+            .home_div {
+                display:  block;
+            }
+        } */
+        .sponser_div {
+            background-color: #f0efec;
+
+        }
+
+        .sponser_div_img01 {
+            display: inline-block;
+            color: transparent;
+            height: auto;
+            font-size: 0;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+        /* index section end */
+  </style>
+ 
 </head>
-
 <body>
-        <!-- _________________________ Start Page _________________________ -->
-            <div id="page" class="safari_mobile_only cmsmasters_liquid fixed_header cmsmasters_heading_under_header cmsmasters_tribe_events_views_v2 cmsmasters_tribe_events_style_mode_tribe hfeed site">
-                <!-- _________________________ Start Main _________________________ -->
-                <div id="main">
-                    <!-- _________________________ Start Header _________________________ -->
-                    <nav class="Default_Navbar" id="Default_Navbar">
-                        <div class="navbar">
-                          <div class="logo"><a href="#">SFoundatin</a></div>
-                          <i class='bx bx-menu'><i class="bi bi-list">=</i></i>
-                          <div class="nav-links" id="nav_links">
-                            <div class="sidebar-logo">
-                              <span class="logo-name">SFoundation</span>
-                              <i class="bi bi-x">x</i>
-                            </div>
-                            <ul class="links">
-                              <li class="px-3"><a href="index.html">Home</a></li>
-                              <li class=" px-3"><a href="aboutUs.html">About Us</a></li>
-                              <li><a href="whatWeDo.html">What We Do</a></li>
-                              <li class=" px-3"><a href="events.html">Events</a></li>
-                              <li class=" px-3"><a href="contactUs.html">Contact Us</a></li>
-                              <li class=" px-3"><a href="logIn.html">LogIn</a></li>
-                              <li class=" px-3"><a href="donate.html">Donate</a></li>
-                            </ul>
-                          </div>
-                      </nav>
-                    
-                      <script>
-                        // sidebar open close js code
-                        let navLinks = document.querySelector(".nav-links");
-                        let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-                        let menuCloseBtn = document.querySelector(".nav-links .bi-x");
-                        menuOpenBtn.onclick = function () {
-                          navLinks.style.left = "0";
-                        }
-                        menuCloseBtn.onclick = function () {
-                          navLinks.style.left = "-100%";
-                        }
-                        // sidebar submenu open close js code
-                        let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-                        htmlcssArrow.onclick = function () {
-                          navLinks.classList.toggle("show1");
-                        }
-                        let moreArrow = document.querySelector(".more-arrow");
-                        moreArrow.onclick = function () {
-                          navLinks.classList.toggle("show2");
-                        }
-                        let jsArrow = document.querySelector(".js-arrow");
-                        jsArrow.onclick = function () {
-                          navLinks.classList.toggle("show3");
-                        }
-                      </script>
-                    <!-- _________________________ Finish Header _________________________ -->
+    <nav class="Default_Navbar" id="Default_Navbar">
+        <div class="navbar">
+          <div class="logo"><a href="#">SFoundation</a></div>
+          <i class='bx bx-menu'><i class="bi bi-list">=</i></i>
+          <div class="nav-links" id="nav_links">
+            <div class="sidebar-logo">
+              <span class="logo-name">SFoundation</span>
+              <i class="bi bi-x">x</i>
+            </div>
+            <ul class="links">
+              <li class="px-3"><a href="index.html">Home</a></li>
+              <li class=" px-3"><a href="aboutUs.html">About Us</a></li>
+              <li><a href="whatWeDo.html">What We Do</a></li>
+              <li class=" px-3"><a href="events.html">Events</a></li>
+              <li class=" px-3"><a href="contactUs.html">Contact Us</a></li>
+              <li class=" px-3"><a href="logIn.html">LogIn</a></li>
+              <li class=" px-3"><a href="donate.html">Donate</a></li>
+              <li class=" px-3"><a href="form1.html">Form1</a></li>
+            </ul>
+          </div>
+      </nav>
+    
+      <script>
+        // sidebar open close js code
+        let navLinks = document.querySelector(".nav-links");
+        let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+        let menuCloseBtn = document.querySelector(".nav-links .bi-x");
+        menuOpenBtn.onclick = function () {
+          navLinks.style.left = "0";
+        }
+        menuCloseBtn.onclick = function () {
+          navLinks.style.left = "-100%";
+        }
+        // sidebar submenu open close js code
+        let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+        htmlcssArrow.onclick = function () {
+          navLinks.classList.toggle("show1");
+        }
+        let moreArrow = document.querySelector(".more-arrow");
+        moreArrow.onclick = function () {
+          navLinks.classList.toggle("show2");
+        }
+        let jsArrow = document.querySelector(".js-arrow");
+        jsArrow.onclick = function () {
+          navLinks.classList.toggle("show3");
+        }
+      </script>
 
+      <!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> -->
+      <div id="slider">
+      <figure>
+      <img src="https://images.pexels.com/photos/1682497/pexels-photo-1682497.jpeg?cs=srgb&dl=pexels-vidal-balielo-jr-1682497.jpg&fm=jpg" alt>
+      <img src="https://images.pexels.com/photos/3038369/pexels-photo-3038369.jpeg?cs=srgb&dl=pexels-caleb-oquendo-3038369.jpg&fm=jpg" alt>
+      <img src="https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?cs=srgb&dl=pexels-emma-bauso-2253879.jpg&fm=jpg" alt>
+      <img src="https://images.pexels.com/photos/1682497/pexels-photo-1682497.jpeg?cs=srgb&dl=pexels-vidal-balielo-jr-1682497.jpg&fm=jpg" alt>
+      <img src="https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?cs=srgb&dl=pexels-emma-bauso-2253879.jpg&fm=jpg" alt>
+      </figure>
+      </div>
 
-                            <!-- _________________________ Start Middle _________________________ -->
-                            <div id="middle">
-                                <div class="middle_inner">
-                                    <div class="content_wrap fullwidth">
-
-                                        <!--_________________________ Start Content _________________________ -->
-                                        <div class="middle_content entry"></div>
-                                    </div>
-                                    <div id="cmsmasters_row_1aa14dc01a" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_fullwidth">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner cmsmasters_row_fullwidth">
-                                                    <div class="cmsmasters_row_margin">
-                                                        <div id="cmsmasters_column_6e1c62c9bc" class="cmsmasters_column one_first">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div class="cmsmasters_slider">
-                                                                    <!-- START Slider Home 1 REVOLUTION SLIDER 6.6.3 -->
-                                                                    <p class="rs-p-wp-fix"></p>
-                                                                    <rs-module-wrap id="rev_slider_4_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-                                                                        <rs-module id="rev_slider_4_1"   data-version="6.6.3">
-                                                                            <rs-slides style="overflow: hidden; position: absolute;">
-                                                                                <rs-slide style="position: absolute;" data-key="rs-6" data-title="Slide" data-anim="adpr:false;">
-                                                                                    <img src="data:image/jpeg;base64,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" alt="" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//children-charity.cmsmasters.net/wp-content/uploads/2017/06/slide1-1.jpg"
-                                                                                        data-panzoom="d:10000;ss:105;se:108;" data-no-retina>
-                                                                                    <!---->
-                                                                                    <h2 id="slider-4-slide-6-layer-21" class="rs-layer" data-type="text" data-rsp_ch="on" data-xy="x:c;yo:366px,295px,285px,275px;" data-text="s:56,56,56,48;l:62;fw:200;a:inherit;"
-                                                                                        data-frame_0="y:100%;tp:600;" data-frame_1="tp:600;e:power4.inOut;st:0;sp:2000;" data-frame_999="o:0;tp:600;st:w;sR:4000;" style="z-index:5;font-family:'';">They are the Future
-                                                                                    </h2>
-                                                                                    <!---->
-                                                                                    <p id="slider-4-slide-6-layer-22" class="rs-layer" data-type="text" data-rsp_ch="on" data-xy="x:c;yo:458px,378px,368px,348px;" data-text="s:24,24,24,18;l:38,38,38,30;fw:300;a:center;"
-                                                                                        data-frame_0="y:100%;tp:600;" data-frame_1="tp:600;e:power4.inOut;st:0;sp:2000;" data-frame_999="o:0;tp:600;st:w;sR:4000;" style="z-index:6;font-family:'';">More than 100,000 children are waiting in Foster Care<br> for their loving forever families!
-                                                                                    </p>
-                                                                                    <!---->
-                                                                                    <rs-layer id="slider-4-slide-6-layer-23" class="rev-btn" data-type="button" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="x:c;yo:575px,495px,485px,455px;"
-                                                                                        data-text="s:13;ls:2px;fw:500;a:inherit;" data-actions='o:click;a:simplelink;target:_self;url:https://children-charity.cmsmasters.net/children-available-for-adoption/;'
-                                                                                        data-padding="t:14;r:55;b:14;l:55;" data-border="bor:30px,30px,30px,30px;" data-frame_0="sX:0.9;sY:0.9;tp:600;" data-frame_1="tp:600;st:910;sp:1500;sR:910;" data-frame_999="o:0;tp:600;st:w;sR:3590;"
-                                                                                        data-frame_hover="bgc:rgba(255,255,255,0.3);boc:rgba(255,255,255,0);bor:30px,30px,30px,30px;bos:solid;oX:50;oY:50;e:none;" style="z-index:7;background-color:rgba(255,255,255,0.2);font-family:'';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">BECOME A FOSTER PARENT
-                                                                                    </rs-layer>
-                                                                                    <!---->
-                                                                                </rs-slide>
-                                                                                <rs-slide style="position: absolute;" data-key="rs-9" data-title="Slide" data-anim="adpr:false;">
-                                                                                    <img src="data:image/jpeg;base64,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" alt="" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//children-charity.cmsmasters.net/wp-content/uploads/2017/06/slide2-1.jpg"
-                                                                                        data-panzoom="d:10000;ss:105;se:108;" data-no-retina>
-                                                                                    <!---->
-                                                                                    <h2 id="slider-4-slide-9-layer-1" class="rs-layer" data-type="text" data-rsp_ch="on" data-xy="x:c;xo:0,0,0,-1px;yo:365px,305px,285px,265px;" data-text="s:56,56,56,48;l:62;fw:200;a:inherit;"
-                                                                                        data-frame_0="y:100%;tp:600;" data-frame_1="tp:600;e:power4.inOut;sp:2000;sR:10;" data-frame_999="o:0;tp:600;st:w;sR:3990;" style="z-index:5;font-family:'';">Helping. Healing. Caring
-                                                                                    </h2>
-                                                                                    <!---->
-                                                                                    <p id="slider-4-slide-9-layer-3" class="rs-layer" data-type="text" data-rsp_ch="on" data-xy="x:c;xo:0,0,0,1px;yo:458px,398px,378px,342px;" data-text="s:24,24,24,18;l:38,38,38,30;fw:300;a:center;"
-                                                                                        data-dim="w:auto,auto,auto,528px;h:auto,auto,auto,88px;" data-frame_0="y:100%;tp:600;" data-frame_1="tp:600;e:power4.inOut;sp:2000;sR:10;" data-frame_999="o:0;tp:600;st:w;sR:3990;"
-                                                                                        style="z-index:6;font-family:'';">There can be no keener revelation of a society's soul<br> than the way in which it treats its children.
-                                                                                    </p>
-                                                                                    <!---->
-                                                                                    <rs-layer id="slider-4-slide-9-layer-4" class="rev-btn" data-type="button" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="x:c;yo:576px,516px,496px,446px;"
-                                                                                        data-text="s:13;ls:2px;fw:500;a:inherit;" data-actions='o:click;a:simplelink;target:_self;url:https://children-charity.cmsmasters.net/children-available-for-adoption/;'
-                                                                                        data-padding="t:14;r:55;b:14;l:55;" data-border="bor:30px,30px,30px,30px;" data-frame_0="sX:0.9;sY:0.9;tp:600;" data-frame_1="tp:600;st:910;sp:1500;sR:910;" data-frame_999="o:0;tp:600;st:w;sR:3590;"
-                                                                                        data-frame_hover="bgc:rgba(255,255,255,0.3);boc:rgba(255,255,255,0);bor:30px,30px,30px,30px;bos:solid;oX:50;oY:50;e:none;" style="z-index:7;background-color:rgba(255,255,255,0.15);font-family:'';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">START HELPING NOW
-                                                                                    </rs-layer>
-                                                                                    <!---->
-                                                                                </rs-slide>
-                                                                                <rs-slide style="position: absolute;" data-key="rs-10" data-title="Slide" data-anim="adpr:false;">
-                                                                                    <img src="data:image/jpeg;base64,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" alt="" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//children-charity.cmsmasters.net/wp-content/uploads/2017/06/slide3-1.jpg"
-                                                                                        data-panzoom="d:10000;ss:105;se:108;" data-no-retina>
-                                                                                    <!---->
-                                                                                    <h2 id="slider-4-slide-10-layer-21" class="rs-layer" data-type="text" data-rsp_ch="on" data-xy="x:c;yo:365px,295px,285px,275px;" data-text="s:56,56,56,48;l:62;ls:0px,0px,0px,0;fw:200;a:inherit;"
-                                                                                        data-frame_0="y:100%;tp:600;" data-frame_1="tp:600;e:power4.inOut;st:0;sp:2000;" data-frame_999="o:0;tp:600;st:w;sR:4000;" style="z-index:5;font-family:'';">Give a Child a Start
-                                                                                    </h2>
-                                                                                    <!---->
-                                                                                    <p id="slider-4-slide-10-layer-22" class="rs-layer" data-type="text" data-rsp_ch="on" data-xy="x:c;yo:458px,378px,368px,348px;" data-text="s:24,24,24,18;l:38,38,38,30;fw:300;a:center;"
-                                                                                        data-frame_0="y:100%;tp:600;" data-frame_1="tp:600;e:power4.inOut;st:0;sp:2000;" data-frame_999="o:0;tp:600;st:w;sR:4000;" style="z-index:6;font-family:'';">We worry about what a child will become tomorrow,<br> yet we forget that he is someone today.
-                                                                                    </p>
-                                                                                    <!---->
-                                                                                    <rs-layer id="slider-4-slide-10-layer-23" class="rev-btn" data-type="button" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="x:c;yo:575px,495px,485px,455px;"
-                                                                                        data-text="s:13;ls:2px;fw:500;a:inherit;" data-actions='o:click;a:simplelink;target:_self;url:https://children-charity.cmsmasters.net/children-available-for-adoption/;'
-                                                                                        data-padding="t:14;r:55;b:14;l:55;" data-border="bor:30px,30px,30px,30px;" data-frame_0="sX:0.9;sY:0.9;tp:600;" data-frame_1="tp:600;st:910;sp:1500;sR:910;" data-frame_999="o:0;tp:600;st:w;sR:3590;"
-                                                                                        data-frame_hover="bgc:rgba(255,255,255,0.3);boc:rgba(255,255,255,0);bor:30px,30px,30px,30px;bos:solid;oX:50;oY:50;e:none;" style="z-index:7;background-color:rgba(255,255,255,0.2);font-family:'';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">BECOME A FOSTER PARENT
-                                                                                    </rs-layer>
-                                                                                    <!---->
-                                                                                </rs-slide>
-                                                                            </rs-slides>
-                                                                        </rs-module>
-                                                                        <script>
-                                                                            setREVStartSize({
-                                                                                c: 'rev_slider_4_1',
-                                                                                rl: [1240, 1024, 778, 480],
-                                                                                el: [],
-                                                                                gw: [1920, 1336, 778, 480],
-                                                                                gh: [1000, 900, 760, 720],
-                                                                                type: 'standard',
-                                                                                justify: '',
-                                                                                layout: 'fullwidth',
-                                                                                mh: "0"
-                                                                            });
-                                                                            if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider41"] !== undefined) {
-                                                                                window.RS_MODULES.modules["revslider41"].once = false;
-                                                                                window.revapi4 = undefined;
-                                                                                if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal()
-                                                                            }
-                                                                        </script>
-                                                                    </rs-module-wrap>
-                                                                    <!-- END REVOLUTION SLIDER -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_9e8bd114e8" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin">
-                                                        <div id="cmsmasters_column_d723818ab1" class="cmsmasters_column one_first">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="cmsmasters_heading_904277552d" class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-                                                                    <h5 class="cmsmasters_heading">ABOUT US</h5>
-                                                                </div>
-                                                                <div class="cmsmasters_text">
-                                                                    <div id="cmsmasters_heading_dcbc514a2d" class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-                                                                        <h2 class="cmsmasters_heading">SFoundation Kindness Diaries Trust</h2>
-                                                                    </div>
-                                                                    <!-- <div id="cmsmasters_heading_4b63105e66" class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
-                                                                        <h2 class="cmsmasters_heading">where they can feel valued and loved.</h2>
-                                                                    </div> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_cf5edfc6d1" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin cmsmasters_row_columns_behavior">
-                                                        <div id="cmsmasters_column_b3b2672a74" class="cmsmasters_column one_half">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="cmsmasters_fb_0dab373399" class="cmsmasters_featured_block">
-                                                                    <div class="featured_block_inner">
-                                                                        <div class="featured_block_text">
-                                                                            <div style="text-align: left;">
-                                                                                <div id="cmsmasters_heading_53f3a76d77" class="cmsmasters_heading_wrap cmsmasters_heading_align_left">
-                                                                                    <!-- <h2 class="cmsmasters_heading">Child Abuse Prevention</h2> -->
-                                                                                </div>
-                                                                                <div class="cmsmasters_text">
-                                                                                    <p><span style="color: #746f77; font-size: 18px; line-height: 30px; font-weight: 300;">DKU Kindness Diaries Trust is a registered non-profit organisation – established in 2019 by Brit-Indian philanthropist, entrepreneur and Film maker Deana Uppal. Our dedicated team of individuals are committed to supporting the needs of poverty struck communities. Currently, we are focusing our support in and around the Jaipur area of Rajasthan, India. We also have been collaborating on projects internationally.
-                                                                                        We work with local schools to provide access to education to children who would otherwise not have access. We also offer vocational education to adults to equip them with marketable skills that increase their chances of employment enabling them to support themselves and their families.</span></p>
-                                                                                </div>
-                                                                                <div id="cmsmasters_divider_be49d910d2" class="cl"></div>
-                                                                                <!-- <div id="cmsmasters_button_aab5727247" class="button_wrap"><a href="https://children-charity.cmsmasters.net/get-involved/" class="cmsmasters_button"><span>Get Involved!</span></a></div> -->
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="cmsmasters_column_8ea9415683" class="cmsmasters_column one_half">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="cmsmasters_fb_d8e745e555" class="cmsmasters_featured_block">
-                                                                    <div class="featured_block_inner">
-                                                                        <div class="featured_block_text"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_8b5fae67d4" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin">
-                                                        <div id="cmsmasters_column_25a3785451" class="cmsmasters_column one_first">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="cmsmasters_divider_e02a1038ed" class="cl"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_86880823a0" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin cmsmasters_row_columns_behavior">
-                                                        <div id="cmsmasters_column_36048442e1" class="cmsmasters_column one_half">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="cmsmasters_fb_bac93abcef" class="cmsmasters_featured_block">
-                                                                    <div class="featured_block_inner">
-                                                                        <div class="featured_block_text"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="cmsmasters_column_712dfbb9b6" class="cmsmasters_column one_half">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="cmsmasters_fb_96ab16b7fd" class="cmsmasters_featured_block">
-                                                                    <div class="featured_block_inner">
-                                                                        <div class="featured_block_text">
-                                                                            <div id="cmsmasters_heading_95e37d8eec" class="cmsmasters_heading_wrap cmsmasters_heading_align_left">
-                                                                                <!-- <h2 class="cmsmasters_heading">Foster Care &amp; Adoption</h2> -->
-                                                                            </div>
-                                                                            <div class="cmsmasters_text">
-                                                                                <p><span style="color: #746f77; font-size: 18px; line-height: 30px; font-weight: 300;">We aim to empower individuals to become independent and lead dignified lives. The Kindness Diaries Trust team holds the conviction that education plays a vital role in overcoming the poverty that at least 25% of children in Jaipur face at birth. We are committed to making education accessible to all.
-
-                                                                                    In addition to our focus on education, we recognise the importance of addressing other basic needs, such as health care, clothing and food. We provide these necessities to a large number of poverty struck areas. Our food distributions feed hundreds of people every week.
-                                                                                    
-                                                                                    During the COVID pandemic, our committed team in Jaipur oversaw the distribution of thousands of PPE kits. We worked hard to get our hands on many oxygen machines to help patients in dire need. Our team installed oxygen machines for COVID-19 patients who were unable to secure a hospital bed due to the high volume of inpatients at the time. Our experienced medical team helped to save many lives—our efforts were acknowledged and appreciated by the local authorities and government.
-                                                                                    
-                                                                                    At Kindness Diaries Trust, we believe any act of kindness can make the most significant difference.</span></p>
-                                                                            </div>
-                                                                            <div id="cmsmasters_divider_7d8dd215da" class="cl"></div>
-                                                                            <!-- <div id="cmsmasters_button_5b4d24606c" class="button_wrap"><a href="https://children-charity.cmsmasters.net/about-us" class="cmsmasters_button"><span>Learn How!</span></a></div> -->
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_22dd8eab47" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin">
-                                                        <div id="cmsmasters_column_917c2d468b" class="cmsmasters_column one_first">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div class="cmsmasters_text">
-                                                                    <h2 style="color: #44364e; font-size: 44px; line-height: 60px; font-weight: 400; text-align: center;">Want to Help? <span style="color: #cd366b; font-size: 44px; line-height: 50px; font-weight: 400;">Sponsor <span style="color: #44364e;">or <span style="color: #81256f; font-size: 44px; line-height: 50px; font-weight: 400; display: inline-block;">Donate!</span></span>
-                                                                        </span>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="cmsmasters_text">
-                                                                    <div style="text-align: center;"><span style="color: #746f77; font-size: 18px; line-height: 30px; font-weight: 300;">Each year, hundreds of children and teens are removed from their homes due to abuse, neglect or</span></div>
-                                                                    <div style="text-align: center;"><span style="color: #746f77; font-size: 18px; line-height: 30px; font-weight: 300;"> abandonment. We manage foster care and related services for these youth.</span></div>
-                                                                    <div id="cmsmasters_divider_b0fc91b574" class="cl"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_bd303eb0b1" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin">
-                                                        <div id="cmsmasters_column_83f62d2148" class="cmsmasters_column one_first">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div class="aligncenter">
-                                                                    <div class="cmsmasters_img  cmsmasters_image_c"><img src="https://serudsindia.org/wp-content/uploads/2020/10/children-in-seruds-orphanage-kurnool.jpg" alt="children" /></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cmsmasters_row_fad57beb01" class="cmsmasters_row cmsmasters_color_scheme_default cmsmasters_row_top_default cmsmasters_row_bot_default cmsmasters_row_boxed">
-                                        <div class="cmsmasters_row_outer_parent">
-                                            <div class="cmsmasters_row_outer">
-                                                <div class="cmsmasters_row_inner">
-                                                    <div class="cmsmasters_row_margin">
-                                                        <div id="cmsmasters_column_3f3da58a94" class="cmsmasters_column one_first">
-                                                            <div class="cmsmasters_column_inner">
-                                                                <div id="featured_campaign_ef0d5a0ca9" class="cmsmasters_featured_campaign">
-                                                                    <!--_________________________ Start Vertical Campaign _________________________ -->
-                                                                    <article id="post-10830" class="post-10830 campaign type-campaign status-publish has-post-thumbnail hentry cp-categs-campaigns">
-                                                                        <div class="cmsmasters_campaign_wrap_img">
-                                                                            <figure class="cmsmasters_img_rollover_wrap preloader"><img width="300" height="300" src="https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/1-1-300x300.jpg" class="full-width wp-post-image" alt="Help Our Kids with School Uniforms"
-                                                                                    title="1" srcset="https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/1-1-300x300.jpg 300w, https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/1-1-150x150.jpg 150w, https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/1-1-90x90.jpg 90w, https://children-charity.cmsmasters.net/wp-content/uploads/2017/05/1-1-400x400.jpg 400w"
-                                                                                    sizes="(max-width: 300px) 100vw, 300px" />
-                                                                                <div class="cmsmasters_img_rollover"><a href="https://children-charity.cmsmasters.net/campaign/title-5/" title="Help Our Kids with School Uniforms" class="cmsmasters_open_link cmsmasters_theme_icon_search"></a></div>
-                                                                            </figure>
-                                                                        </div>
-                                                                        <div class="cmsmasters_campaign_cont">
-                                                                            <div class="cmsmasters_campaign_wrap_heading">
-                                                                                <span class="cmsmasters_campaign_rest_amount">$10350 To Go</span>
-                                                                                <header class="cmsmasters_campaign_header entry-header">
-                                                                                    <h2 class="cmsmasters_campaign_title entry-title"><a href="https://children-charity.cmsmasters.net/campaign/title-5/">Help Our Kids with School Uniforms</a></h2>
-                                                                                </header>
-                                                                            </div>
-                                                                            <div class="cmsmasters_campaign_content entry-content">
-                                                                                <p>Cras dapibus ullamcorper dictum. Vivamus nec erat placerat felis scelerisque porttitor in ac turpis. In nec imperdiet turpis.</p>
-                                                                            </div>
-                                                                            <div class="cmsmasters_campaign_donate_button">
-                                                                                <div class="cmsmasters_campaign_donate_button_inner"><a class="button" href="donate.html ">Donate Now</a></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </article>
-                                                                    <!--_________________________ Finish Vertical Campaign _________________________ -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                    <!-- _________________________ Start Bottom _________________________ -->
-                    <div id="bottom" class="cmsmasters_color_scheme_fourth" style="margin-top: 60px;">
-                        <div class="bottom_bg">
-                            <div class="bottom_outer">
-                                <div class="bottom_inner sidebar_layout_14141414">
-                                    <aside id="text-2" class="widget widget_text">
-                                        <h3 class="widgettitle">Navigation</h3>
-                                        <div class="textwidget">
-                                            <ul>
-                                                <li><a href="https://children-charity.cmsmasters.net/children-available-for-adoption/">Adoptions</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/about-us/">About Us</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/get-involved/">Get Involved</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/contact-us/">Contact Us</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/donate-confirmation/">Donate Now</a></li>
-                                            </ul>
-                                        </div>
-                                    </aside>
-                                    <aside id="text-3" class="widget widget_text">
-                                        <h3 class="widgettitle">Fundraising</h3>
-                                        <div class="textwidget">
-                                            <ul>
-                                                <li><a href="https://children-charity.cmsmasters.net/2015/10/28/title-8/">Foster Care</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/2015/11/27/blog-children-need-care/">Donate</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/2016/06/06/title-1/">Love is Real</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/event/title-2/">Mothers Day</a></li>
-                                                <li><a href="https://children-charity.cmsmasters.net/events/list/">Events</a></li>
-                                            </ul>
-                                        </div>
-                                    </aside>
-                                    <aside id="text-4" class="widget widget_text">
-                                        <h3 class="widgettitle">Socials</h3>
-                                        <div class="textwidget">
-                                            <ul>
-                                                <li><a href="#">Facebook</a></li>
-                                                <li><a href="#">Twitter</a></li>
-                                                <li><a href="#">YouTube</a></li>
-                                                <li><a href="#">Instagram</a></li>
-                                                <li><a href="#">Snapchat</a></li>
-                                            </ul>
-                                        </div>
-                                    </aside>
-                                    <aside id="text-5" class="widget widget_text">
-                                        <div class="textwidget">
-                                            <p class="fw-bold fs-4 mb-2">SFoundation</p>
-                                            <p>1802 Aughton, Argleton, West Lancashire, England</p>
-                                            <p>Phone: 12-345-678<br /> Email: <a href="mailto:cmsmasters@gmail.com">example@example.com</a></p>
-                                        </div>
-                                    </aside>
-                                </div>
-                            </div>
+      <!-- footer start -->
+        <div class="home_text01 text-center">
+            <p>ABOUT US</p>
+        </div>
+        <div class="home_text02 text-center">
+            <p>SFoundation Kindness Diaries Trust</p>
+        </div>
+        <div class="home_div  row m-0 p-0 mt-5">
+    
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-5">
+                <div class="home_text03 ">
+                    <p class="w-75 ms-5  mt-5">DKU Kindness Diaries Trust is a registered non-profit organisation –
+                        established in
+                        2019 by
+                        Brit-Indian philanthropist, entrepreneur and Film maker Deana Uppal. Our dedicated team of
+                        individuals are committed to supporting the needs of poverty struck communities. Currently, we
+                        are focusing our support in and around the Jaipur area of Rajasthan, India. We also have been
+                        collaborating on projects internationally. We work with local schools to provide access to
+                        education to children who would otherwise not have access. We also offer vocational education to
+                        adults to equip them with marketable skills that increase their chances of employment enabling
+                        them to support themselves and their families.</p>
+                </div>
+                <div class="mx-3">
+                    <div class="home_img02"></div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-5">
+    
+                <div class="mx-3 mt-2">
+                    <div class="home_img01 "></div>
+                </div>
+                <div class=" home_text04 ">
+                    <p class="w-75 ms-5 mt-5">We aim to empower individuals to become independent and lead dignified
+                        lives. The
+                        Kindness Diaries
+                        Trust team holds the conviction that education plays a vital role in overcoming the poverty that at
+                        least 25% of children in Jaipur face at birth. We are committed to making education accessible to
+                        all. In addition to our focus on education, we recognise the importance of addressing other basic
+                        needs, such as health care, clothing and food. We provide these necessities to a large number of
+                        poverty struck areas. Our food distributions feed hundreds of people every week. During the COVID
+                        pandemic, our committed team in Jaipur oversaw the distribution of thousands of PPE kits. We worked
+                        hard to get our hands on many oxygen machines to help patients in dire need. Our team installed
+                        oxygen machines for COVID-19 patients who were unable to secure a hospital bed due to the high
+                        volume of inpatients at the time. Our experienced medical team helped to save many lives—our efforts
+                        were acknowledged and appreciated by the local authorities and government. At Kindness Diaries
+                        Trust, we believe any act of kindness can make the most significant difference.</p>
+                </div>
+    
+            </div>
+            <div class="col-12 col-md-1"></div>
+        </div>
+        <div class="sponser_div">
+            <div >
+                <h2 style="color: #44364e; font-size: 44px; line-height: 60px; font-weight: 400; text-align: center; margin-top: 3%; padding-top: 8%;">
+                    <span>Want to Help?</span><span
+                        style="color: #cd366b; font-size: 44px; line-height: 50px; font-weight: 500;"> Sponser </span>
+                    <span> or </span><span
+                        style="color: #81256f; font-size: 44px; line-height: 50px; font-weight: 500; display: inline-block;">
+                        Donate! </span>
+                </h2>
+            </div>
+            <div class="text-center"><span
+                    style="color: #746f77; font-size: 18px; line-height: 30px; font-weight: 400;">Each year, hundreds of
+                    children and teens are removed from their homes due to abuse, neglect or</span></div>
+            <div class="text-center pb-5"><span style="color: #746f77; font-size: 18px; line-height: 30px; font-weight: 400;">
+                    abandonment. We manage foster care and related services for these youth.</span></div>
+            <div class="container w-75 text-center">
+                <div>
+                    <img class="sponser_div_img01" src="children-in-seruds-orphanage.jpg" alt="">
+                </div>
+                <div class="d-flex">
+                    <div><img style="width: 300x; height: 300px;" src="sponser_div_img02.jpg" alt="second"></div>
+                    <div style="background-color: #513b5f;">
+                        <div class="text-start ms-5 mt-5">
+                            <p style="color: rgba(255, 255, 255, .7); font-size: 18px; line-height: 26px; font-weight: 500;">$10350 To Go</p>
+                            <p style="color: #ffffff; font-family: 'Dosis', Arial, Helvetica, 'Nimbus Sans L', sans-serif; font-size: 24px; line-height: 32px; font-weight: 500;">Help Our Kids with School Uniforms</p>
+                            <p style="color: rgba(255, 255, 255, .7); font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif; font-size: 18px; line-height: 24px; font-weight: 300;">Cras dapibus ullamcorper dictum. Vivamus nec erat placerat felis scelerisque porttitor in ac turpis. In nec imperdiet turpis.</p>
+        
                         </div>
                     </div>
-                    <!--_________________________ Finish Bottom _________________________-->
-                    <a href="" id="slide_top" class="cmsmasters_theme_icon_slide_top_button"><span></span></a>
                 </div>
-                    <!--_________________________ Finish Main _________________________-->
-                    <!--_________________________ Start Footer _________________________-->
-                    <footer id="footer" class="footer cmsmasters_color_scheme_footer cmsmasters_footer_small">
-                    </footer>
-                    <!--_________________________ Finish Footer _________________________-->
             </div>
-            <span class="cmsmasters_responsive_width"></span>
-        <!--________________________ Finish Page _________________________-->
+        </div>
+<!-- footer start -->
+      <footer class="text-center footer text-center mt-4">
+        <div class="container p-4">
+          
+            <div class="row  text-md-start mt-5">
+              
+                <!--Logo Start-->
+              <div class="col-md-4 ">
+                <h4 class="pb-3"> <span class="Analyst">SFoundation</span></h4>
+                
+                <p class="copy-right"> 1802 Aughton, Argleton, <br> West Lancashire, England</p>
+                <p class="copy-right"> Phone: 12-345-678</p>
+                <p class="copy-right m-0 p-0">Email:</p>
+                <p class="copy-right m-0 p-0">example@example.com</p>
+              </div>
+              <!--Logo end-->
+              
+                <!--Navigation Start-->
+              <div class="col-md-3">
+               <h5 class="pb-3">Navigation </h5>
+                <ul class="list-style ps-0 ">
+                  <li class="pb-3">Adoptions</li>
+                  <li class="pb-3">About Us</li>
+                  <li class="pb-3">Get Involved</li>
+                  <li class="pb-3">Contact Us</li>
+                  <li class="pb-3">Donate Now</li>
+                </ul>
+              </div>
+              <!--Navigation end-->
+              
+                
+                <!--Fundraising Start-->
+              <div class="col-md-3 ">
+               <h5 class="pb-3"> Fundraising </h5>
+                <ul class="list-style ps-0">
+                  <li class="pb-3">Foster Care</li>
+                  <li class="pb-3">Donate</li>
+                  <li class="pb-3">Love is Real</li>
+                  <li class="pb-3">Mothers Day</li>
+                  <li class="pb-3">Events</li>
+                </ul>
+              </div>
+              <!--Fundraising end-->
+             
+              <!--Socials Start-->
+              <div class="col-md-2 ">
+               <h5 class="pb-3"> Socials </h5>
+                <ul class="list-style ps-0">
+                  <li class="pb-3">Facebook</li>
+                  <li class="pb-3">Twitter</li>
+                  <li class="pb-3">YouTube</li>
+                  <li class="pb-3">Instagram</li>
+                  <li class="pb-3">Snapchat</li>
+                </ul>
+              </div>
+              <!--Socials end-->
+            </div>
+          
+        </div>
+      </footer>
 
-                     
-                        <link rel='stylesheet' id='rs-plugin-settings-css' href='https://children-charity.cmsmasters.net/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.3' type='text/css' media='all' />
-            
-                        
-                 
-                        <script id="rs-initialisation-scripts">
-                            var tpj = jQuery;
-                            var revapi4;
-                            if (window.RS_MODULES === undefined) window.RS_MODULES = {};
-                            if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
-                            RS_MODULES.modules["revslider41"] = {
-                                once: RS_MODULES.modules["revslider41"] !== undefined ? RS_MODULES.modules["revslider41"].once : undefined,
-                                init: function() {
-                                    window.revapi4 = window.revapi4 === undefined || window.revapi4 === null || window.revapi4.length === 0 ? document.getElementById("rev_slider_4_1") : window.revapi4;
-                                    if (window.revapi4 === null || window.revapi4 === undefined || window.revapi4.length == 0) {
-                                        window.revapi4initTry = window.revapi4initTry === undefined ? 0 : window.revapi4initTry + 1;
-                                        if (window.revapi4initTry < 20) requestAnimationFrame(function() {
-                                            RS_MODULES.modules["revslider41"].init()
-                                        });
-                                        return;
-                                    }
-                                    window.revapi4 = jQuery(window.revapi4);
-                                    if (window.revapi4.revolution == undefined) {
-                                        revslider_showDoubleJqueryError("rev_slider_4_1");
-                                        return;
-                                    }
-                                    revapi4.revolutionInit({
-                                        revapi: "revapi4",
-                                        duration: 6000,
-                                        visibilityLevels: "1240,1024,778,480",
-                                        gridwidth: "1920,1336,778,480",
-                                        gridheight: "1000,900,760,720",
-                                        lazyType: "smart",
-                                        spinner: "spinner0",
-                                        perspectiveType: "local",
-                                        responsiveLevels: "1240,1024,778,480",
-                                        progressBar: {
-                                            disableProgressBar: true
-                                        },
-                                        navigation: {
-                                            onHoverStop: false
-                                        },
-                                        viewPort: {
-                                            global: true,
-                                            globalDist: "-200px",
-                                            enable: false,
-                                            visible_area: "20%"
-                                        },
-                                        fallbacks: {
-                                            nextSlideOnWindowFocus: true,
-                                            disableFocusListener: true,
-                                            allowHTML5AutoPlayOnAndroid: true
-                                        },
-                                    });
 
-                                }
-                            }
-                        </script>
 </body>
 </html>

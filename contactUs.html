@@ -10,15 +10,9 @@
     <style>
       @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
 
-/* ------------- */
-/* GLOBAL STYLES */
-/* ------------- */
-
 * {
 box-sizing: border-box;
 }
-
-
 .container {
 max-width: 1170px;
 margin-left: auto;
@@ -41,14 +35,13 @@ letter-spacing: 0.1em;
 .brand span {
 color: #ffffff;
 }
-
-
 .wrapper > * {
 padding: 1em;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .company-info {
-background: #C3C9DD;
 border-top-left-radius: 4px;
 border-top-right-radius: 4px;
 }
@@ -59,19 +52,10 @@ text-align: center;
 margin: 0 0 1rem 0;
 }
 
-/* ------- */
-/* CONTACT */
-/* ------- */
-
 .contact {
-background: #dcdfea;
 border-bottom-left-radius: 4px;
 border-bottom-right-radius: 4px;
 }
-
-/* ---- */
-/* FORM */
-/* ---- */
 
 .contact form {
 display: grid;
@@ -103,28 +87,20 @@ border-radius: 4px;
 .contact form textarea {
 resize: none;
 }
-
 .contact form button {
-/* background: #627EDC; */
+border: 2px solid #627EDC;
 border: 0;
-color: #e4e4e4;
+color: #627EDC;
 text-transform: uppercase;
 font-size: 14px;
 font-weight: bold;
 }
-
 .contact form button:hover,
 .contact form button:focus {
-/* background: #3952a3; */
 color: #ffffff;
 outline: 0;
 transition: background-color 2s ease-out;
 }
-
-/* ------------- */
-/* MEDIA QUERIES */
-/* ------------- */
-
 @media only screen and (min-width: 700px) {
 .wrapper {
   display: grid;
@@ -154,7 +130,7 @@ transition: background-color 2s ease-out;
 <body>
     <nav class="Default_Navbar" id="Default_Navbar">
         <div class="navbar">
-          <div class="logo"><a href="#">SFoundatin</a></div>
+          <div class="logo"><a href="#">SFoundation</a></div>
           <i class='bx bx-menu'><i class="bi bi-list">=</i></i>
           <div class="nav-links" id="nav_links">
             <div class="sidebar-logo">
@@ -207,9 +183,9 @@ transition: background-color 2s ease-out;
                 <h3>S Foundation</h3>
     
                 <ul>
-                    <li><i class="fa fa-road"></i>Add:- 44 Main Street</li>
-                    <li><i class="fa fa-phone"></i>ph.no:-  (555) 555-5555</li>
-                    <li><i class="fa fa-envelope"></i> Email:- test@phoenix.com</li>
+                    <li class="fs-5"><i class="fa fa-road"></i>Add:- 44 Main Street</li>
+                    <li class="fs-5"><i class="fa fa-phone"></i>ph.no:-  (555) 555-5555</li>
+                    <li class="fs-5"><i class="fa fa-envelope"></i> Email:- test@phoenix.com</li>
                 </ul>
             </div>
             <!-- End .company-info -->
@@ -223,23 +199,23 @@ transition: background-color 2s ease-out;
                         <input type="text" name="name" id="name" required>
                     </p>
                     <p>
-                        <label>last Name</label>
-                        <input type="text" name="company" id="company">
+                        <label>Last Name</label>
+                        <input type="email" name="company" id="company">
                     </p>
                     <p>
-                        <label>E-mail Address</label>
-                        <input type="email" name="email" id="email" required>
+                        <label>E-Mail Address</label>
+                        <input type="number" name="email" id="email" required>
                     </p>
                     <p>
                         <label>Phone Number</label>
-                        <input type="text" name="phone" id="phone">
+                        <input type="number" name="email" id="email" required>
                     </p>
                     <p class="full">
-                        <label>Message</label>
+                        <label>Reason</label>
                         <textarea name="message" rows="5" id="message"></textarea>
                     </p>
                     <p class="full">
-                        <button type="submit">Submit</button>
+                        <button type="submit"  style="background-color: #44364E !important;">Submit</button>
                     </p>
                 </form>
                 <!-- End #contact-form -->
@@ -249,6 +225,66 @@ transition: background-color 2s ease-out;
         <!-- End .wrapper -->
     </div>
     <!-- End .container -->
+
+    <footer class="text-center footer text-center">
+      <div class="container p-4">
+        
+          <div class="row  text-md-start mt-5">
+            
+              <!--Logo Start-->
+            <div class="col-md-4 ">
+              <h4 class="pb-3"> <span class="Analyst">SFoundation</span></h4>
+              
+              <p class="copy-right"> 1802 Aughton, Argleton, <br> West Lancashire, England</p>
+              <p class="copy-right"> Phone: 12-345-678</p>
+              <p class="copy-right m-0 p-0">Email:</p>
+              <p class="copy-right m-0 p-0">example@example.com</p>
+            </div>
+            <!--Logo end-->
+            
+              <!--Navigation Start-->
+            <div class="col-md-3">
+             <h5 class="pb-3">Navigation </h5>
+              <ul class="list-style ps-0 ">
+                <li class="pb-3">Adoptions</li>
+                <li class="pb-3">About Us</li>
+                <li class="pb-3">Get Involved</li>
+                <li class="pb-3">Contact Us</li>
+                <li class="pb-3">Donate Now</li>
+              </ul>
+            </div>
+            <!--Navigation end-->
+            
+              
+              <!--Fundraising Start-->
+            <div class="col-md-3 ">
+             <h5 class="pb-3"> Fundraising </h5>
+              <ul class="list-style ps-0">
+                <li class="pb-3">Foster Care</li>
+                <li class="pb-3">Donate</li>
+                <li class="pb-3">Love is Real</li>
+                <li class="pb-3">Mothers Day</li>
+                <li class="pb-3">Events</li>
+              </ul>
+            </div>
+            <!--Fundraising end-->
+           
+            <!--Socials Start-->
+            <div class="col-md-2 ">
+             <h5 class="pb-3"> Socials </h5>
+              <ul class="list-style ps-0">
+                <li class="pb-3">Facebook</li>
+                <li class="pb-3">Twitter</li>
+                <li class="pb-3">YouTube</li>
+                <li class="pb-3">Instagram</li>
+                <li class="pb-3">Snapchat</li>
+              </ul>
+            </div>
+            <!--Socials end-->
+          </div>
+        
+      </div>
+    </footer>
     
 </body>
 </html>
